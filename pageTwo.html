@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <style>
+        
+        body {
+            background-image: url('img-sq/Kobe/Bryant.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        
+        a {
+            margin-left:50px;
+            margin-top: 10px;
+        }
+
+
+        .container1 {
+           display: flex;
+           flex-direction: column;
+           padding: 40px;
+           position: absolute;
+           left: 100px;
+        }
+
+        .container2 {
+           display: flex;
+           flex-direction: column;
+           padding: 40px;
+           position: absolute;
+           right: 100px;
+        }
+
+        .yearLeft {
+            position: relative;
+            left: 10%;
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            text-align: center;
+           background: goldenrod;
+        }
+        .yearRight {
+            position: relative;
+            bottom: 66%;
+            left: 85%;
+            width: 100px;
+            height: 40px;
+            margin-top: 10px;
+            text-align: center;
+           background: goldenrod;
+        }
+
+
+        .main-image{
+           width: 250px;
+           height: 250px;
+           position: absolute;
+           left: 325px;
+           top: 200px;
+           background-image: contain;
+        }
+
+    </style>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="ui three item menu">
+
+        <a href="index.html">&#9064;</a>
+        <a href="pageTwo.html">&#8981;</a>
+        <a href="pageThree.html">&#8966;</a>
+
+    </nav>
+
+    <div class="container1">
+   <div class="yearLeft" onclick="changeShoe(myArray[0])">
+        1997
+      </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[1])">
+        1998
+        </div>    
+     <div class="yearLeft" onclick="changeShoe(myArray[2])">
+        1998
+        </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[3])">
+        2000
+     </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[4])">
+        2001
+     </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[5])">
+        2004
+     </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[6])">
+        2005
+     </div>
+     <div class="yearLeft" onclick="changeShoe(myArray[7])">
+        2006
+     </div>
+   </div>
+
+   <div class="container2">
+     <div class="yearRight" onclick="changeShoe(myArray[8])">
+        2007
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[9])">
+        2008
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[10])">
+        2008
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[11])">
+        2009
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[12])">
+         2010
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[13])">
+        2011
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[14])">
+        2012
+     </div>
+     <div class="yearRight" onclick="changeShoe(myArray[15])">
+        2013
+     </div >
+     <div class="yearRight" onclick="changeShoe(myArray[16])">
+         Clear
+     </div>
+     </div>
+
+
+     <div class="main-image">
+         <img src="" alt="">
+     </div>
+
+
+<script>
+   
+const imageContainer = document.querySelector('.main-image');
+const image1URL = 'img-sq/Kobe/Adidas-EQT-Elevation-Colors.jpeg';
+const image2URL = 'img-sq/Kobe/kobe-kb8-allstar.jpg';
+const image3URL = 'img-sq/Kobe/Adidas-Kobe-KB8-II-B.jpg';
+const image4URL = 'http://www.watchprosite.com/img/watchprosite/timeout/26/scaled/timeout_image.1160226.jpg';
+const image5URL = 'img-sq/Kobe/Adidas-Kobe-Two-White-Side-Rear.jpg';
+const image6URL = 'img-sq/Kobe/nike-zoom-huarache-2k4-lakers-kobe-laser1.jpg';
+const image7URL = 'img-sq/Kobe/2k5.jpg';
+const image8URL = 'img-sq/Kobe/Nike-Zoom-Kobe-1-MPLS-Side.jpg';
+const image9URL = 'img-sq/Kobe/Nike-Zoom-Kobe-II.jpg';
+const image10URL = 'img-sq/Kobe/Nike-Zoom-Kobe-3-III-Lakers-Pair-Pose-Sole.jpg';
+const image11URL = 'img-sq/Kobe/kobe-hyperdunk-4.jpg';
+const image12URL = 'img-sq/Kobe/zoom-kobe-iv.jpg';
+const image13URL = 'img-sq/Kobe/zoom-kobe-v.jpg';
+const image14URL = 'img-sq/Kobe/zoom-kobe-vi.jpg';
+const image15URL = 'img-sq/Kobe/zoom-kobe-vii.jpg';
+const image16URL ='img-sq/Kobe/Nike-Kobe-8-Sulfer.jpg';
+
+
+
+
+const myArray = [image1URL, image2URL, image3URL, image4URL, image5URL, image6URL, image7URL, image8URL, 
+image9URL, image10URL, image11URL, image12URL, image13URL, image14URL, image15URL, image16URL];
+
+
+console.log(imageContainer.children[0]);
+
+const changeShoe = (shoeURL) => {
+   imageContainer.children[0].src = shoeURL;
+}
+
+</script>
+
+
+</body>
+</html>
